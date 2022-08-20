@@ -14,6 +14,7 @@ public class Usuario implements Serializable {
     private String apellido;
     private String titulo;
     private String descripcion;
+    @Column(name = "fotoPerfil", nullable = true, length = 5000)
     private String fotoPerfil;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
